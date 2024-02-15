@@ -10,6 +10,36 @@ function showElementById(elementId){
     element.classList.remove('hidden');
 }
 
+function removeBackgroundColorById(elementId){
+const element = document.getElementById(elementId);
+element.classList.add('bg-orange-300');
+}
+
+function removeBackgroundColorById(elementId){
+const element = document.getElementById(elementId);
+element.classList.remove('bg-orange-300');
+}
+
+function getTextElementValueById(elementId){
+    const element=document.getElementById(elementId);
+    const elementText =element.innerText;
+    const value = parseInt(elementText);
+    return value;
+}
+function setTextElementValueById(elementId,value){
+const element = document.getElementById(elementId);
+element.innerText = value;
+}
+
+function getElementTextById(elementId){
+    const element=document.getElementTextById(elementId);
+    const text = element.innerText;
+    return text;
+}
+
+
+
+
 function getRandomAlphabet(){
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
     const alphabets  = alphabetString.split('');

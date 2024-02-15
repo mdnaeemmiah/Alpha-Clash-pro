@@ -80,7 +80,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
             </svg>
-            <span>1</span>
+            <span id="current-life">5</span>
           </button>
           <button class="btn rounded-full bg-purple-700 text-white px-4">
             score
@@ -89,19 +89,20 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
             </svg>
-            <span>1</span>
+            <span id="current-score">0</span>
           </button>
         </div>
       </div>
     </section>
     <!-- end -->
-    <section class="score flex justify-center items-center min-h-screen hidden" >
+    <section id="final-score" class=" flex justify-center items-center min-h-screen hidden" >
       <div class="text-white text-center space-y-7 bg-[#FFFFFF33] rounded-lg">
+        <h4 class="text-3xl">Game over</h4>
         <h1 class="text-8xl  ">
           <span class="font-extrabold">Score:</span>
-          <span>15</span>
+          <span id="last-score">15</span>
         </h1>
-        <button class="btn">play again</button>
+        <button onclick="play()" class="btn">play again</button>
         <p class="pb-5">practice will make you a pro</p>
 
       </div>
